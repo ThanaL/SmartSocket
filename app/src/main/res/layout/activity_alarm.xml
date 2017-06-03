@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.thanalabadi.new_one.alarm"
+    android:background="@android:color/background_light">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppThemeBlue"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/toolbar2" />
+
+    <ImageButton
+        android:id="@+id/out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toolbar2"
+        android:layout_alignEnd="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:background="@color/colorPrimary"
+        app:srcCompat="@drawable/delet" />
+
+    <ImageButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toolbar2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:background="@color/colorPrimary"
+        app:srcCompat="@drawable/check" />
+
+    <TextView
+        android:text="Add Alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:layout_alignBottom="@+id/toolbar2"
+        android:gravity="center"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/time_text"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:id="@+id/time" />
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/name"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="51dp"
+        android:text="Time"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/Turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/time"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="32dp"
+        android:text="Turn"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="61dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/satarday"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/Turn"
+            android:layout_alignRight="@+id/Turn"
+            android:layout_below="@+id/textView8"
+            android:layout_marginLeft="10dp"
+
+            android:layout_weight="1.02"
+            android:clickable="true"
+            app:backgroundTint="@color/colorPrimary"
+            app:elevation="0dp"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/s" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/s"
+            android:id="@+id/sunday"
+            android:layout_marginLeft="15dp"
+
+            app:backgroundTint="@color/colorPrimary"
+            app:rippleColor="?android:attr/colorBackgroundCacheHint"
+            app:elevation="0dp"
+            android:layout_alignTop="@+id/satarday"
+            android:layout_toLeftOf="@+id/textView8"
+            android:layout_toStartOf="@+id/textView8"
+            android:layout_weight="1"
+            android:soundEffectsEnabled="true" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/m"
+            android:id="@+id/monday"
+            android:layout_marginLeft="15dp"
+            app:backgroundTint="@color/colorPrimary"
+
+            android:layout_alignTop="@+id/satarday"
+            android:layout_toRightOf="@+id/time_text"
+            android:layout_toEndOf="@+id/time_text"
+            android:layout_weight="1" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/t"
+            app:backgroundTint="@color/colorPrimary"
+
+            android:id="@+id/tusday"
+            android:layout_marginLeft="15dp"
+
+            android:layout_alignTop="@+id/wednesday"
+            android:layout_toLeftOf="@+id/friday"
+            android:layout_toStartOf="@+id/friday"
+            android:layout_weight="1" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/w"
+            android:id="@+id/wednesday"
+            android:layout_marginLeft="15dp"
+            app:backgroundTint="@color/colorPrimary"
+
+            android:layout_alignTop="@+id/theresday"
+            android:layout_alignLeft="@+id/end_time"
+            android:layout_alignStart="@+id/end_time"
+            android:layout_weight="1" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:backgroundTint="@color/colorPrimary"
+
+            app:srcCompat="@drawable/t"
+            android:id="@+id/theresday"
+            android:layout_marginLeft="15dp"
+
+            android:layout_below="@+id/sunday"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/f"
+            android:layout_marginLeft="15dp"
+            app:backgroundTint="@color/colorPrimary"
+
+            android:layout_alignTop="@+id/tusday"
+            android:layout_alignRight="@+id/save"
+            android:layout_alignEnd="@+id/save"
+            android:id="@+id/friday"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Repeat:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:textSize="24sp"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/Turn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="82dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/name"
+        android:hint="Name ALarm"
+        android:layout_marginTop="37dp"
+        android:gravity="center_vertical|center"
+        android:layout_below="@+id/toolbar2"
+        android:layout_toRightOf="@+id/out"
+        android:layout_toEndOf="@+id/out"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <RadioGroup
+
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_alignTop="@+id/Turn"
+        android:layout_alignRight="@+id/name"
+        android:layout_alignEnd="@+id/name"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView8"
+            android:layout_centerHorizontal="true"
+            android:checked="true"
+            android:layout_marginRight="40dp"
+            android:text="on" />
+
+        <RadioButton
+            android:id="@+id/off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/on"
+            android:layout_alignBottom="@+id/on"
+            android:layout_alignEnd="@+id/save"
+            android:layout_alignRight="@+id/save"
+            android:text="off" />
+    </RadioGroup>
+
+</RelativeLayout>

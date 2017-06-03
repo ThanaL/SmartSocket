@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardElevation="5dp"
+    android:id="@+id/card">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="142dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:srcCompat="@drawable/alarm"
+            android:id="@+id/alarm"
+            android:background="@color/cardview_light_background"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/alarm"
+            android:layout_alignRight="@+id/delete"
+            android:layout_alignEnd="@+id/delete" />
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="43dp"
+
+            android:layout_marginRight="43dp"
+            android:layout_toLeftOf="@+id/alarm"
+            android:layout_toStartOf="@+id/alarm"
+            android:background="@color/cardview_shadow_end_color"
+            android:onClick="onClick"
+            card_view:srcCompat="@android:drawable/ic_menu_delete" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:srcCompat="@drawable/light_on"
+            android:id="@+id/state"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/name"
+            android:background="@color/cardview_light_background" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:srcCompat="@drawable/wifii"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/delete"
+            android:layout_toEndOf="@+id/delete"
+            android:layout_marginTop="18dp"
+            android:id="@+id/wifi"
+            android:background="@color/cardview_light_background" />
+
+        <ImageButton
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/cardview_light_background"
+            android:contentDescription="share"
+            card_view:srcCompat="@drawable/ic_menu_share" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

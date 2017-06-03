@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_accent_pink">#ff4081</color>
+    <color name="color_primary_blue">#2196f3</color>
+    <color name="color_primary_blue_dark">#1976d2</color>
+    <color name="color_primary_green">#ff4081</color>
+    <color name="color_primary_green_dark">#ff4081</color>
+    <color name="color_primary_red">#f44336</color>
+    <color name="color_primary_red_dark">#d32f2f</color>
+    <color name="color_shadow">#44000000</color>
+    <declare-styleable name="ArcMenu"><attr format="reference" name="menu_scr"/><attr format="reference|color" name="menu_color"/><attr format="color" name="menu_ripple_color"/><attr format="dimension" name="menu_radius"/><attr format="dimension" name="menu_margin"/><attr format="enum" name="menu_open">
+            <enum name="arc_left" value="0"/>
+            <enum name="arc_right" value="1"/>
+            <enum name="arc_top_left" value="2"/>
+            <enum name="arc_top_right" value="3"/>
+        </attr><attr format="integer" name="menu_animation_time"/><attr format="dimension" name="menu_elevation"/></declare-styleable>
+    <dimen name="default_elevation">6dp</dimen>
+    <dimen name="default_radius">150dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <string name="app_name">Main</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+    <style name="AppThemeBlue" parent="AppTheme">
+        <item name="colorPrimary">@color/color_primary_blue</item>
+        <item name="colorPrimaryDark">@color/color_primary_blue_dark</item>
+        <item name="colorAccent">@color/color_accent_pink</item>
+    </style>
+    <style name="AppThemeGreen" parent="AppTheme">
+        <item name="colorPrimary">@color/color_primary_green</item>
+        <item name="colorPrimaryDark">@color/color_primary_green_dark</item>
+    </style>
+    <style name="AppThemeRed" parent="AppTheme">
+        <item name="colorPrimary">@color/color_primary_red</item>
+        <item name="colorPrimaryDark">@color/color_primary_red_dark</item>
+    </style>
+</resources>
